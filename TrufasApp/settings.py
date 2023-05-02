@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "app"
+    "storages", 
+
 ]
 
 MIDDLEWARE = [
@@ -114,4 +117,10 @@ STATIC_URL = "static/"
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+AWS_QUERYSTRING_AUTH = False
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+AWS_ACCESS_KEY_ID = "AKIARZYWQ2IPKXYGHPGZ"
+AWS_SECRET_ACCESS_KEY = "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"
+AWS_STORAGE_BUCKET_NAME = "trufasapp"
+

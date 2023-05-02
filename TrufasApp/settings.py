@@ -37,9 +37,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "app"
-    "storages", 
-
+    "app",
+    "storages",
 ]
 
 MIDDLEWARE = [
@@ -119,8 +118,9 @@ STATIC_URL = "static/"
 
 
 AWS_QUERYSTRING_AUTH = False
+AWS_ACCESS_KEY_ID = 'AKIARZYWQ2IPKXYGHPGZ'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'trufasapp'
+AWS_S3_REGION_NAME = 'us-east-1'  # por ejemplo, 'us-east-1'
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-AWS_ACCESS_KEY_ID = "AKIARZYWQ2IPKXYGHPGZ"
-AWS_SECRET_ACCESS_KEY = "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"
-AWS_STORAGE_BUCKET_NAME = "trufasapp"
 
